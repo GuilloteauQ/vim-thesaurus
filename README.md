@@ -12,9 +12,9 @@ Just type ```<Enter>``` to change the word when satisfied, or ```q``` to quit
 
 ## The Big Huge Thesaurus API
 
-This plugin calls the ![Big Huge Thesaurus](https://words.bighugelabs.com/) API.
+This plugin calls the [Big Huge Thesaurus](https://words.bighugelabs.com/) API.
 
-You will need a key. You can find one for free ![here](https://words.bighugelabs.com/getkey.php)
+You will need a key. You can find one for free [here](https://words.bighugelabs.com/getkey.php)
 
 Then, you have to enter this key in a file and give the path to this file in ```plugin/thesaurus.vim```
 
