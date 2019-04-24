@@ -37,3 +37,5 @@ function! g:Thesaurus()
     call append(0, l)
     normal! ddgg
 endfunction
+
+nnoremap th :call Thesaurus()<Enter>
