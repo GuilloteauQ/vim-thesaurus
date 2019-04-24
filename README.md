@@ -1,6 +1,6 @@
 # Vim-Thesaurus
 
-Vim-Thesaurus is a simple Vim plugin to help you find the most accurate words when writing essays.
+Vim-Thesaurus is a simple Vim plugin to help you find the most accurate words when writing reports/essays.
 
 ## How to use it ?
 
@@ -8,7 +8,7 @@ In normal mode, place the cursor over a word, and type ```th```.
 
 It will open a buffer with different options for replacing the word.
 
-Just type ```<Enter>``` to change the word when satisfied, or ```q``` to quit
+Just press ```<Enter>``` to change the word when satisfied, or ```q``` to quit
 
 ## The Big Huge Thesaurus API
 
