@@ -19,9 +19,14 @@ function! s:GetWords(content)
     endif
 endfunction
 
+function! s:GetUserAPIKey()
+    let file_content = readfile('/home/quentin/.vim/plugged/vim-thesaurus/key')
+    return file_content[0]
+endfunction
+
 function! g:Thesaurus()
     let word = eval('expand("<cword>")')
-    let api_key = 'f6b2d0a2af560f3c3494b350da31b3d8'
+    let api_key = s:GetUserAPIKey()
     let url = 'http://words.bighugelabs.com/api/2/'.api_key.'/'.word.'/json'
     let response = webapi#http#get(url)
     let content = webapi#json#decode(response.content)
