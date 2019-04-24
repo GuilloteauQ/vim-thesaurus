@@ -20,6 +20,7 @@ function! s:GetWords(content)
 endfunction
 
 function! s:GetUserAPIKey()
+    " CHANGE THE PATH HERE !
     let file_content = readfile('/home/quentin/.vim/plugged/vim-thesaurus/key')
     return file_content[0]
 endfunction
