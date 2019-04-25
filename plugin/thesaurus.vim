@@ -24,9 +24,12 @@ function! g:Thesaurus()
     let api_key = g:ThesaurusAPIKey
     let url = 'http://words.bighugelabs.com/api/2/'.api_key.'/'.word.'/json'
     let response = webapi#http#get(url)
-    let content = webapi#json#decode(response.content)
-    " should Test if response ok
-    let l = s:GetWords(content)
+    try
+        let content = webapi#json#decode(response.content)
+        let l = s:GetWords(content)
+    catch
+        let l = ['No result...']
+    endtry
     call insert(l, '# '.word)
     silent pedit results
     wincmd P
