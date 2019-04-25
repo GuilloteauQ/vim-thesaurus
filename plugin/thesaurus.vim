@@ -21,7 +21,12 @@ endfunction
 
 function! g:Thesaurus()
     let word = eval('expand("<cword>")')
-    let api_key = g:ThesaurusAPIKey
+    if exists("g:ThesaurusAPIKey")
+        let api_key = g:ThesaurusAPIKey
+    else
+        echoerr 'No API Key defined in vimrc ! -> let g:ThesaurusAPIKey = KEY'
+        return
+    endif
     let url = 'http://words.bighugelabs.com/api/2/'.api_key.'/'.word.'/json'
     let response = webapi#http#get(url)
     try
