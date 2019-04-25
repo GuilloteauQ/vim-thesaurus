@@ -40,4 +40,4 @@ function! g:Thesaurus()
     normal! ddgg
 endfunction
 
-nnoremap th :call Thesaurus()<Enter>
+nnoremap <leader>t :call Thesaurus()<Enter>
