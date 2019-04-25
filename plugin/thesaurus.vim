@@ -34,6 +34,8 @@ function! g:Thesaurus()
     nnoremap <buffer> q :q!<cr>
     nnoremap <buffer> <Enter> 0wy$:q<Enter>viwp
     normal! ggdG
+    syntax keyword keywordsTherausus noun verb adj ant syn rel
+    hi link keywordsTherausus Keyword
     call append(0, l)
     normal! ddgg
 endfunction
