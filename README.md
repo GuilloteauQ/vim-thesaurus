@@ -4,7 +4,7 @@ Vim-Thesaurus is a simple Vim plugin to help you find the most accurate words wh
 
 ## How to use it ?
 
-In normal mode, place the cursor over a word, and type ```th```.
+In normal mode, place the cursor over a word, and type ```<leader> t```.
 
 It will open a buffer with different options for replacing the word.
 
@@ -16,6 +16,8 @@ This plugin calls the [Big Huge Thesaurus](https://words.bighugelabs.com/) API.
 
 You will need a key. You can find one for free [here](https://words.bighugelabs.com/getkey.php)
 
-Then, you have to enter this key in a file and give the path to this file in ```plugin/thesaurus.vim```
+Once you have a key, add it to your ```vimrc```
 
-(I am trying to find a less tedious way than this...)
+```vim
+let g:ThesaurusAPIKey = '0123456789abcdef'
+```
