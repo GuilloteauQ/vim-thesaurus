@@ -2,7 +2,7 @@
 
 Vim-Thesaurus is a simple Vim plugin to help you find the most accurate words when writing reports/essays.
 
-[![asciicast](https://asciinema.org/a/mkaoPnSMgTLjYtm4tiGcAi0I1.svg)](https://asciinema.org/a/mkaoPnSMgTLjYtm4tiGcAi0I1)
+[![asciicast](https://asciinema.org/a/244309.svg)](https://asciinema.org/a/244309)
 
 ## How to use it ?
 
